@@ -70,7 +70,7 @@ Use the ``get_object_data`` method:
 **Note:** This method uses a single call to collect the fields for the object and additional call for every 10,000 records (using the default ``batch_size``). 
 
 Working with Ordered Dictionary columns in a dataframe
--------------------------------------------------
+------------------------------------------------------
 Salesforce employs an Ordered Dictionary data type which is not compatible with some SQL databases and can be difficult to use. These methods help identify Ordered Dictionaries and convert them to JSONs. 
 Use the ``list_df_odict_columns`` method to list dataframe columns that are Ordered Dictionaries:
 
