@@ -16,7 +16,7 @@ sorrek-salesforce releases are available as wheel packages for macOS, Windows an
 Setup
 =====
 
-In order to use any of the methods included in this library, users will need to pass through a sf connection object using the `Simple Salesforce Python library <https://pypi.org/project/simple-salesforce/>`__. Please refer to their documentation on how to establish a Salesforce connection. 
+In order to use most of the methods included in this library, users will need to pass through a sf connection object using the `Simple Salesforce Python library <https://pypi.org/project/simple-salesforce/>`__. Please refer to their documentation on how to establish a Salesforce connection. 
 
 Furthermore, some of the methods will require users to pass through a sql connection object using either a `SQLAlchemy <https://pypi.org/project/SQLAlchemy/>`__ or `psycopg2 <https://pypi.org/project/psycopg2/>`__ connector. 
 
