@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/sorrek/sorrek-salesforce"
+"Homepage" = "https://github.com/sorrek/sorrek-salesforce/sorrek-salesforce"
 "Bug Tracker" = "https://github.com/sorrek/sorrek-salesforce/issues"

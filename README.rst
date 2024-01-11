@@ -1,7 +1,7 @@
 Introduction
 ============
 
-`Sorrek <http://www.sorrek.io>`__ is a data intelligence tool. This Python library provides several functions to read, update, and backup Salesforce data using the Simple-Salesforce Python package. 
+`Sorrek <http://www.sorrek.io>`__ is a data intelligence tool. This Python library provides several functions to read, update, and backup Salesforce. 
 
 Installation
 ============
