@@ -122,4 +122,5 @@ Use the ``backup_salesforce`` method to automatically port all objects, or a pre
 -   A ``sql_conn`` needs to be established using SQLAlchemy or psycopg2. Please refer to their documentation, linked above, for instructions on how to create this object. 
 -   By default, this method will backup all Salesforce objects. To select a subset of objects, use the objects argument. 
 -   The default batch size is 10,000 records for each call on each object. Please refer to the details in the section describing the ``get_object_data`` method for more details. 
+-   These methods will automatically convert any Ordered Dictionary data types into JSONs using the ``df_odict_to_json`` method.
 -   The ``backup_salesforce`` method will return a dataframe with details on how many records were collected from each object and which objects failed. In some cases, an object is shown in the ``EntityDefinition`` table but isn't actually queryable. 
