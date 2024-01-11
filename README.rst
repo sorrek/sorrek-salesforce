@@ -65,7 +65,7 @@ Use the ``get_object_data`` method:
 
     from sorrek_salesforce import get_object_data
 
-    fields = get_object_data(sf, object, batch_size=10000)
+    df = get_object_data(sf, object, batch_size=10000)
 
 **Note:** This method uses a single call to collect the fields for the object and additional call for every 10,000 records (using the default ``batch_size``). 
 
