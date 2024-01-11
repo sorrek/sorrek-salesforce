@@ -1,7 +1,6 @@
 "Version details for sorrek-salesforce"
 
 __title__ = 'sorrek-salesforce'
-__description__ = 'Functions to read, update, and backup Salesforce. '
 __url__ = 'https://github.com/sorrek/sorrek-salesforce'
 __version__ = '1.0.0'
 __author__ = 'Ariel Lavi'
