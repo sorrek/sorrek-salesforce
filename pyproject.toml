@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sorrek-salesforce"
+version = "1.0.0"
+authors = [
+  { name="Ariel Lavi", email="ariel@sorrek.io" },
+]
+description = "Simple Salesforce Library Functions"
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sorrek/sorrek-salesforce"
+"Bug Tracker" = "https://github.com/sorrek/sorrek-salesforce/issues"
