@@ -3,9 +3,9 @@ import copy
 from datetime import datetime
 import json
 import math
-import numpy as np # Version 1.23.5
+import numpy as np
 import os
-import pandas as pd # Version 1.2.4
+import pandas as pd
 
 
 
@@ -75,7 +75,6 @@ def list_df_odict_columns(df):
 
 
 def df_odict_to_json(df):
-    # Converts OrderedDict data types to JSONs since they're incompatible with PostgreSQL
     upload_df = df.copy()
     o_dict_cols = list_df_odict_columns(df)
     for col in o_dict_cols:
@@ -85,7 +84,6 @@ def df_odict_to_json(df):
 
 
 def update_object(sf, object, update_dicts, batch_size=1000):
-    # Update dicts is a list of dictionaries with "Id" as the first key value and then any others as key values
     update_method = getattr(sf.bulk, object)
     chunks = math.ceil(len(update_dicts)/batch_size)
     results = []
@@ -97,7 +95,6 @@ def update_object(sf, object, update_dicts, batch_size=1000):
 
 
 def object_df_to_sql(df, sql_conn, schema, table_name):
-    # If object starts with non-alpha character it appends "o_" as a prefix
     if not table_name[0].isalpha():
         table_name = f"o_{table_name}"
     upload_df = df_odict_to_json(df)
