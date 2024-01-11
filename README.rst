@@ -30,7 +30,7 @@ Use the ``list_sfdc_objects`` method:
 
 .. code:: py
 
-    from sorrek-salesforce import list_sfdc_objects
+    from sorrek_salesforce import list_sfdc_objects
 
     objects = list_sfdc_objects(sf)
 
@@ -41,7 +41,7 @@ Use the ``list_sfdc_object_fields`` method:
 
 .. code:: py
 
-    from sorrek-salesforce import list_sfdc_object_fields
+    from sorrek_salesforce import list_sfdc_object_fields
 
     fields = list_sfdc_object_fields(sf, object)
 
@@ -52,7 +52,7 @@ Use the ``list_object_dependencies`` method:
 
 .. code:: py
 
-    from sorrek-salesforce import list_object_dependencies
+    from sorrek_salesforce import list_object_dependencies
 
     fields = list_object_dependencies(sf, object)
 
@@ -63,7 +63,7 @@ Use the ``get_object_data`` method:
 
 .. code:: py
 
-    from sorrek-salesforce import get_object_data
+    from sorrek_salesforce import get_object_data
 
     fields = get_object_data(sf, object, batch_size=10000)
 
@@ -76,7 +76,7 @@ Use the ``list_df_odict_columns`` method to list dataframe columns that are Orde
 
 .. code:: py
 
-    from sorrek-salesforce import list_df_odict_columns
+    from sorrek_salesforce import list_df_odict_columns
 
     odict_fields = list_df_odict_columns(df)
 
@@ -84,7 +84,7 @@ Use the ``df_odict_to_json`` method to convert dataframe columns that are Ordere
 
 .. code:: py
 
-    from sorrek-salesforce import df_odict_to_json
+    from sorrek_salesforce import df_odict_to_json
 
     df2 = df_odict_to_json(df)
 
@@ -95,7 +95,7 @@ Use the ``update_object`` method:
 
 .. code:: py
 
-    from sorrek-salesforce import update_object
+    from sorrek_salesforce import update_object
 
     r = update_object(sf, object, update_dicts, batch_size=1000)
 
@@ -106,7 +106,7 @@ Use the ``object_df_to_sql`` method to port a dataframe output from the ``get_ob
 
 .. code:: py
 
-    from sorrek-salesforce import object_df_to_sql
+    from sorrek_salesforce import object_df_to_sql
 
     object_df_to_sql(df, sql_conn, schema, table_name)
 
@@ -114,7 +114,7 @@ Use the ``backup_salesforce`` method to automatically port all objects, or a pre
 
 .. code:: py
 
-    from sorrek-salesforce import backup_salesforce
+    from sorrek_salesforce import backup_salesforce
 
     sfdc_details_df = backup_salesforce(sf, sql_conn, schema, objects=[], batch_size=10000)
 
